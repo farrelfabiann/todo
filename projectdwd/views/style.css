@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "carlito";
+  background-color: #f5efe7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading {
+  width: 100%;
+  margin-top: 1rem;
+}
+.heading h2 {
+  width: 100%;
+  margin-top: 1rem;
+  color: #3e5879;
+}
+.heading h2:hover {
+  width: 100%;
+  margin-top: 1rem;
+  color: #ff0000;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+form {
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: #3e5879;
+  border: 1px solid #6b8e23;
+  justify-content: center;
+}
+
+form p {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.task_input {
+  align-content: center;
+  width: 89%;
+  height: 15px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+}
+.add_btn {
+  height: 30px;
+  cursor: pointer;
+  background: #4975b8;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+}
+.add_btn:hover {
+  height: 30px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4975b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+table {
+  width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+th {
+  font-size: 19px;
+  color: #3e5879;
+}
+
+th,
+td {
+  text-align: center;
+  border: none;
+  height: 30px;
+  padding: 2px;
+  color: #3e5879;
+}
+
+tr:hover {
+  background: #e9e9e9;
+}
+
+.task {
+  text-align: center;
+}
+
+.delete {
+  text-align: center;
+}
+
+.delete a {
+  color: white;
+  background: #a52a2a;
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.background-blur {
+  position: absolute;
+  margin-top: 70px;
+  top: 0;
+  left: 10rem;
+  width: 100%;
+  height: 100%;
+  background: url("Logo.png") no-repeat center center/cover;
+  filter: blur(5px);
+  z-index: -1;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #3e5879;
+  color: #fff;
+}
+
+.sidebar h1 {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-list .material-symbols-outlined {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+
+.nav-list li:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.main-content {
+  display: flex;
+  position: absolute;
+  top: 8rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  margin-bottom: 50rem;
+}
+
+.main-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+  color: #213555;
+}
+
+.main-content p {
+  font-size: 1.5rem;
+  color: #213555;
+}
+
+.todo {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #d8c4b6;
+  border-radius: 10px;
+  margin-top: 35rem;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  top: -80px;
+}
+
+.todo .tittle {
+  font-size: 20px;
+  color: #213555;
+  text-align: left;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  min-height: 450px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  z-index: 1;
+}
+
+.container .index-container img {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: unset;
+}
+
+.logo-container {
+  width: 70px;
+  right: 500px;
+  margin-right: 150px;
+  margin-top: 35px;
+  top: 135px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.container-logout {
+  width: 500px;
+  min-height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+  border-color: #d8c4b6;
+}
+
+.input-group .btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: #3e5879;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-group .btn:hover {
+  transform: translateY(-5px);
+  background: #213555;
+}
+
+.login-register-text,
+.login-register-text a {
+  color: #213555;
+  font-family: "carlito";
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register-text a {
+  color: #3e5879;
+}
+
+.form-login {
+  background: none;
+  border: none;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 300px;
+  }
+}
+
+/* Edit Task start */
+
+.edit-navbar {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #d8c4b6;
+  border-radius: 10px;
+  margin-top: 7rem;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  top: -80px;
+}
+
+.edit-task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-navbar .edited-formulir input {
+  width: 85%;
+  height: 15px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+}
+
+.edited-button {
+  height: 30px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4975b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+/* Edit Task end */
